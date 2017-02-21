@@ -18,6 +18,16 @@ public class TeamTest2 {
         System.out.println("Good afternoon");
         System.out.println("Good day");
         
+        System.out.println(addNum());
+        System.out.println("GHk");
+        
         
     }
+     public static int addNum() {
+         
+         int a = 2;
+         int b = 2;
+         
+         return a + b;
+     }
 }
