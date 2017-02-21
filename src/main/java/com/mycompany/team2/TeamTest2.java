@@ -20,6 +20,7 @@ public class TeamTest2 {
         
         System.out.println(addNum());
         System.out.println("GHk");
+        System.out.println("GoodDay Sir");
         
         
     }
