@@ -27,22 +27,22 @@
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" max="-2" attributes="0">
                   <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
-                  <Component id="jButton1" alignment="0" pref="113" max="32767" attributes="0"/>
-                  <Component id="jButton3" max="32767" attributes="0"/>
+                  <Component id="ComputeButton" alignment="0" pref="113" max="32767" attributes="0"/>
+                  <Component id="ClearButton" max="32767" attributes="0"/>
               </Group>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
                       <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="1" attributes="0">
-                          <Component id="jTextField1" min="-2" pref="165" max="-2" attributes="0"/>
+                          <Component id="Textbox1" min="-2" pref="165" max="-2" attributes="0"/>
                           <Component id="jLabel1" min="-2" pref="165" max="-2" attributes="0"/>
-                          <Component id="jTextField2" min="-2" pref="165" max="-2" attributes="0"/>
+                          <Component id="Textbox2" min="-2" pref="165" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jTextField4" min="-2" pref="165" max="-2" attributes="0"/>
+                          <Component id="TextboxAnswer" min="-2" pref="165" max="-2" attributes="0"/>
                           <Component id="jProgressBar1" min="-2" pref="165" max="-2" attributes="0"/>
                           <Component id="jComboBox1" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>
@@ -61,9 +61,9 @@
                   <Group type="102" alignment="0" attributes="0">
                       <Component id="jLabel1" min="-2" pref="41" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jTextField1" min="-2" pref="28" max="-2" attributes="0"/>
+                      <Component id="Textbox1" min="-2" pref="28" max="-2" attributes="0"/>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Component id="jTextField2" min="-2" pref="28" max="-2" attributes="0"/>
+                      <Component id="Textbox2" min="-2" pref="28" max="-2" attributes="0"/>
                   </Group>
               </Group>
               <Group type="103" groupAlignment="0" attributes="0">
@@ -73,13 +73,13 @@
                       <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
                       <Component id="jProgressBar1" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="jTextField4" min="-2" max="-2" attributes="0"/>
+                      <Component id="TextboxAnswer" min="-2" pref="38" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
-                      <Component id="jButton1" min="-2" pref="51" max="-2" attributes="0"/>
+                      <Component id="ComputeButton" min="-2" pref="51" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="jButton3" min="-2" pref="51" max="-2" attributes="0"/>
+                      <Component id="ClearButton" min="-2" pref="51" max="-2" attributes="0"/>
                   </Group>
               </Group>
               <EmptySpace pref="26" max="32767" attributes="0"/>
@@ -108,23 +108,26 @@
         </DimensionLayout>
       </Layout>
     </Container>
-    <Component class="javax.swing.JTextField" name="jTextField1">
+    <Component class="javax.swing.JTextField" name="Textbox1">
       <Properties>
         <Property name="text" type="java.lang.String" value="VALUE2"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton1">
+    <Component class="javax.swing.JButton" name="ComputeButton">
       <Properties>
         <Property name="text" type="java.lang.String" value="COMPUTE"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton1ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ComputeButtonActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField2">
+    <Component class="javax.swing.JTextField" name="Textbox2">
       <Properties>
         <Property name="text" type="java.lang.String" value="VALUE2"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Textbox2ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JProgressBar" name="jProgressBar1">
     </Component>
@@ -133,15 +136,18 @@
         <Property name="text" type="java.lang.String" value="          Please Enter Your Values"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton3">
+    <Component class="javax.swing.JButton" name="ClearButton">
       <Properties>
         <Property name="text" type="java.lang.String" value="CLEAR"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ClearButtonActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JComboBox" name="jComboBox1">
       <Properties>
         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-          <StringArray count="11">
+          <StringArray count="8">
             <StringItem index="0" value="Select"/>
             <StringItem index="1" value="ADD"/>
             <StringItem index="2" value="SUBTRACT"/>
@@ -149,10 +155,7 @@
             <StringItem index="4" value="MULTIPLY"/>
             <StringItem index="5" value="COUNTRY"/>
             <StringItem index="6" value="CURRENYCONVERT"/>
-            <StringItem index="7" value="SQUAREROOT"/>
-            <StringItem index="8" value="MEAN"/>
-            <StringItem index="9" value="MODE"/>
-            <StringItem index="10" value="MEANDIAN"/>
+            <StringItem index="7" value=" "/>
           </StringArray>
         </Property>
       </Properties>
@@ -163,7 +166,7 @@
         <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
       </AuxValues>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField4">
+    <Component class="javax.swing.JTextField" name="TextboxAnswer">
       <Properties>
         <Property name="text" type="java.lang.String" value="Answer"/>
       </Properties>
