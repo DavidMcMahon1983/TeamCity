@@ -36,6 +36,7 @@ String num1 = "";
 int number1 = 0;
 String num2 = "";
 int number2 = 0;
+int tsttc = 0;
 
 
     /**
