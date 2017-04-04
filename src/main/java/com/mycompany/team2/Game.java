@@ -39,6 +39,7 @@ int number2 = 0;
 int tsttc = 0;
 int dfr = 8;
 int car = 2;
+int cat = 5;
 
 
     /**
