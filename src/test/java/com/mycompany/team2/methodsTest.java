@@ -45,10 +45,10 @@ public class methodsTest {
     @Test
     public void testAddNum() {
         System.out.println("addNum");
-        int x = 2;
+        int x = 8;
         int y = 2;
         methods instance = new methods();
-        int expResult = 4;
+        int expResult = 10;
         int result = instance.addNum(x, y);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
