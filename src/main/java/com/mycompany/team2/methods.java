@@ -11,6 +11,8 @@ package com.mycompany.team2;
  */
 public class methods {
     
+    String dog ="";
+    
     static String country = "";
     
     public int addNum(int x, int y){
