@@ -23,10 +23,12 @@ public class methodsTest {
     
     @BeforeClass
     public static void setUpClass() {
+        System.out.println("Setup");
     }
     
     @AfterClass
     public static void tearDownClass() {
+        System.out.println("tearDown");
     }
     
     @Before
@@ -50,7 +52,7 @@ public class methodsTest {
         int result = instance.addNum(x, y);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+       // fail("The test case is a prototype.");
     }
 
     /**
@@ -59,14 +61,14 @@ public class methodsTest {
     @Test
     public void testSubNum() {
         System.out.println("subNum");
-        int x = 0;
-        int y = 0;
+        int x = 3;
+        int y = 2;
         methods instance = new methods();
-        int expResult = 0;
+        int expResult = 1;
         int result = instance.subNum(x, y);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+       // fail("The test case is a prototype.");
     }
 
     /**
@@ -82,7 +84,7 @@ public class methodsTest {
         int result = instance.mulNum(x, y);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
 
     /**
@@ -98,13 +100,13 @@ public class methodsTest {
         int result = instance.divNum(x, y);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
 
     /**
      * Test of retCountry method, of class methods.
      */
-    @Test
+   /* @Test
     public void testRetCountry() {
         System.out.println("retCountry");
         int x = 0;
@@ -114,13 +116,13 @@ public class methodsTest {
         int result = instance.retCountry(x, y);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+       // fail("The test case is a prototype.");
     }
-
+*/
     /**
      * Test of getCountry method, of class methods.
      */
-    @Test
+  /*  @Test
     public void testGetCountry() {
         System.out.println("getCountry");
         methods instance = new methods();
@@ -128,8 +130,10 @@ public class methodsTest {
         String result = instance.getCountry();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
     
 }
-/// may have to chanf=ge
+*/
+    
+}
