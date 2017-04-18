@@ -48,7 +48,7 @@ public class methodsTest {
         int x = 9;
         int y = 7;
         methods instance = new methods();
-        int expResult = 16;
+        int expResult = 15;
         int result = instance.addNum(x, y);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
