@@ -12,6 +12,7 @@ package com.mycompany.team2;
 public class methods {
     
     String dog ="";
+    String cat = "";
     
     static String country = "";
     
